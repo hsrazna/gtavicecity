@@ -1,0 +1,218 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "style"
+
+.span5, .span2.center
+	.counter
+		margin-bottom: 5px
+
+i.icon-key
+	background-position: 0 0
+	background-image: url(../images/icons/key.png)
+	width: 14px
+	height: 14px
+	display: inline-block
+	margin-top: 1px
+	line-height: 14px
+	vertical-align: text-top
+	background-repeat: no-repeat
+
+.az-mnu-left
+	width: 50%
+	float: left
+	text-align: left
+.az-mnu-right
+	width: 50%;
+	float: right
+	text-align: right
+.az-mob-menu
+	background: #c0bcb6
+	height: 60px
+	overflow: hidden
+.az-mob-menu-wrap
+	height: 60px
+	margin-bottom: 10px
+.az-mob-menu-fix
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 5
+	height: 0px
+.az-mob-menu-fix2
+	transition: all 0.5s ease-in-out
+	height: 60px
+
+.mm-listview:not(.nav) > li > a
+	padding: 0px 10px 0px 25px !important
+	margin: 20px 0 10px 0 !important
+	display: block
+.mm-listview:not(.nav) > li::after
+	bottom: -10px !important
+	clear: both
+
+#filter-custom-mobile
+	background: #fff
+	padding: 30px
+	.control-group.span6
+		width: 100%
+		margin-left: 0
+	.form-actions
+		padding: 20px
+		text-align: center
+
+#mod-download a.btn
+	text-align: center !important
+a
+	outline: none !important
+	cursor: pointer !important
+
+.container
+	min-width: 0 !important
+
+body
+	overflow-x: hidden
+	overflow-y: auto
+	width: 100%
+
+.main-menu
+	background: #c0bcb6
+
+.move.affix-top
+	line-height: 60px
+.move.affix
+	line-height: 60px
+
+#mobile-menu
+	z-index: 2
+	ul.nav > li > a:nth-child(2)
+		height: 24px
+		overflow: hidden
+		padding: 20px
+		position: relative
+		text-decoration: none
+		background: #c0bcb6
+		margin-right: 50px
+		img
+			margin-right: 10px
+		img:nth-child(2)
+			display: none
+	ul.nav > li:hover
+		// background: #fff
+		> a:nth-child(2)
+			background: #fff
+
+	.two-thirds
+		// margin-top: -20px
+	.section-name
+		// position: absolute
+		// top: 0px
+		background: rgb(245, 239, 232) none repeat scroll 0 0 !important
+		border-left: 1px solid #cfc8bc !important
+		bottom: 0
+		color: #57534b
+		float: none
+		font-size: 14px
+		font-weight: bold
+		height: 20px
+		// left: 0
+		margin: 0 -20px -10px -20px
+		padding: 10px 0 10px 43px
+		// position: absolute
+		// right: 0
+		text-shadow: 1px 1px 1px #ffffff
+		position: relative
+		&::before
+			position: absolute
+			content: ''
+			width: 20px
+			height: 20px
+			top: 10px
+			left: 15px
+		&.information::before
+			background: rgb(245, 239, 232) url(../images/sprite_ico_5.gif) no-repeat -119px 4px
+		&.cheats::before
+			background: rgb(245, 239, 232) url(../images/sprite_ico_5.gif) no-repeat -98px -16px
+		&.maps::before
+			background: rgb(245, 239, 232) url(../images/sprite_ico_5.gif) no-repeat -80px -36px
+		&.files::before
+			background: rgb(245, 239, 232) url(../images/sprite_ico_5.gif) no-repeat -60px -56px
+
+	.bottom-section-name
+		position: absolute
+		top: 0px
+		background: #e0dad1 none repeat scroll 0 0 !important
+		border-left: 1px solid #cfc8bc !important
+		bottom: 0
+		color: #57534b
+		float: none
+		font-size: 14px
+		font-weight: bold
+		height: 20px
+		left: 0
+		margin: 0 -20px -20px -20px
+		padding: 10px 0 10px 15px
+		position: absolute
+		right: 0
+		text-shadow: 1px 1px 1px #ffffff
+
+	.mm-panel
+		>:nth-child(2):not(.nav)
+			margin-top: -20px
+		>:last-child:not(.nav), >:nth-child(2):not(.nav)
+			width: 100% !important
+			//padding-top: 40px
+			position: relative
+			>ul
+				width: 100% !important
+
+.mm-listview:not(.nav)
+	width: 100% !important
+
+
+/*toggle menu*/
+
+.toggle-mnu 
+	display: inline-block
+	width: 28px
+	height: 28px
+	vertical-align: middle
+	margin-left: 20px
+	padding-top: 19px
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #fff
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+/*toggle menu*/
+
+@import "media" // Всегда в конце
