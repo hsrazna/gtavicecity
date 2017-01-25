@@ -9,21 +9,61 @@
 
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) and (min-width : 768px)
+
+	.content-news
+		overflow: hidden
+		height: 242px
+		margin-bottom: 10px !important
+		position: relative
+		&::after
+			content: ''
+			pointer-events: none
+			position: absolute
+			height: 50px
+			width: 100%
+			bottom: 0
+			left: 30px
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+			background: -moz-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+			background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,rgba(255,255,255,1)))
+			background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+			background: -o-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+			background: -ms-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+			background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0)
+
+
 @media only screen and (max-width : 992px)
+	#mod-media iframe
+		height: auto
+	#mod-media .media-preview, #mod-media iframe
+		width: 49%
+		&:nth-child(2n+1)
+			margin-right: 1%
+			margin-left: 0
+		&:nth-child(2n)
+			margin-right: 0
+			margin-left: 0
 	.social-block-groups
 		width: 100%
 		text-align: center
+		background: transparent
 	.search
 		background: #fff !important
 		border: 1px solid #aaa
 		border-radius: 12px
 		overflow: hidden
-		margin: 0 60px 10px 60px !important
-		width: calc(100% - 182px) !important
+		margin: 7px 10px 10px 10px !important
+		width: calc(100% - 62px - 245px) !important
+		float: left
 		button[type="submit"]
 			background: url(../images/search.gif) no-repeat -160px -2px
 			width: 23px
 			left: calc(100% + 7px)
+		&+noindex
+			>.social-block-groups
+				width: 235px
 	.header, .page-content
 		> .right-col
 			display: none
@@ -36,7 +76,7 @@
 		display: none
 	div.container
 		margin-top: 0 !important
-		.header
+		>.header
 			display: none
 	.header, .page-content
 		> .left-col
@@ -59,6 +99,7 @@
 							width: 100%
 						img
 							width: 100%
+							max-width: 468px
 			&:nth-child(2n+1)
 				margin-right: 1%
 				margin-left: 0
@@ -71,6 +112,83 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.forum-category, .forum-category-parent .description
+		padding-left: 0
+	.content-body .item-image
+		min-height: 0 !important
+	.filters .tab-content
+		display: none
+	.filters
+		.nav
+			border-bottom: none
+			text-align: center
+			li
+				display: inline-block
+				width: 100%
+				max-width: 550px
+				margin-top: 5px
+				float: none
+				a:first-child
+					display: none
+			a
+				text-align: center
+				// width: 100%
+				color: #555
+				background: #fff
+				border: 1px solid #ddd
+				font-size: 14px
+				border-radius: 4px
+				font-weight: bold
+				text-decoration: none
+				cursor: pointer
+				&:hover
+					border: 1px solid #ddd
+					background: #aaa
+					color: #fff
+
+
+		.tab-content
+			padding: 0px !important;
+			border: none;
+	#filter-custom
+		display: none !important
+	a[href="#filter-custom"]
+		display: none !important
+	.row-fluid .span3.columns, .similar-mods .row-fluid .span3
+		width: 49%
+		&:nth-child(2n+1)
+			margin-right: 2% !important
+	#cheats-platform-select
+		a
+			display: block !important
+			width: 100% !important
+			box-sizing: border-box !important
+			margin: 0 !important
+			&:first-child
+				border-radius: 4px 4px 0 0 !important
+			&:last-child
+				border-radius: 0 0 4px 4px !important
+	.article.vert-offset-10 .bb-right
+		display: none
+	.row-fluid .span3, .row-fluid .span7
+		width: 100%
+		text-align: center
+
+	.row-fluid .span3
+		margin: 0 !important
+	.block .header
+		text-align: center
+	.social-block .span8, .social-block .span4
+		width: 100%
+		text-align: center
+		.addthis_toolbox_wrapper
+			width: 100%
+			text-align: center
+			.addthis_toolbox
+				width: 100%
+				text-align: center
+				*
+					float: none
 	.modal-footer
 		text-align: center
 		>*
@@ -86,17 +204,6 @@
 			width: 140px
 		.form-horizontal .controls
 			margin-left: 150px
-	.search
-		background: #fff !important
-		border: 1px solid #aaa
-		border-radius: 12px
-		overflow: hidden
-		margin: 0 10px 10px 10px !important
-		width: calc(100% - 62px) !important
-		button[type="submit"]
-			background: url(../images/search.gif) no-repeat -160px -2px
-			width: 23px
-			left: calc(100% + 7px)
 	#news-widget .span6:first-child
 		display: none !important
 	.row-fluid .span6.content, .row-fluid .span6.announce, .span6.last
@@ -121,6 +228,13 @@
 			float: none
 		.counter
 			margin-bottom: 5px
+	.forum-category-parent
+		.span6
+			width: 38% !important
+		.span2
+			width: 12% !important
+		.span4
+			width: 44% !important
 	footer
 		text-align: center
 		.counter
@@ -265,11 +379,77 @@
 	/**/
 
 @media only screen and (max-width : 550px)
+	.parameters-preview .parameter:nth-child(2)
+		padding-left: 0px
+	h2
+		text-align: center
+	.gta-5-cheat
+		text-align: center
+		height: unset !important
+		.gta-5-cheat-image
+			margin-right: 0
+			float: none
+			text-align: center
+			img
+	.bb-center
+		*
+			width: 100%
+			height: auto
+	div:not(div.pagination) table td
+		display: block
 	/**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+	.forum-category-parent
+		.header
+			text-align: center
+			padding-left: 0
+			h2
+				text-align: center
+		.span6
+			width: 100% !important
+			text-align: center
+			padding-left: 0
+			left: 0
+			h3
+				text-align: center
+				left: 0
+		.span2
+			display: none
+		.span4
+			display: none
+	#mod-media .media-preview, #mod-media iframe
+		width: 100%
+		&:nth-child(2n+1)
+			margin-right: 0
+			margin-left: 0
+		&:nth-child(2n)
+			margin-right: 0
+			margin-left: 0
+	.row-fluid .span3.columns, .similar-mods .row-fluid .span3
+		width: 100%
+		&:nth-child(2n+1)
+			margin-right: 0% !important
+	.category .table td
+		display: block
+	.search
+		background: #fff !important
+		border: 1px solid #aaa
+		border-radius: 12px
+		overflow: hidden
+		margin: 0 10px 10px 10px !important
+		width: calc(100% - 62px) !important
+		float: none
+		button[type="submit"]
+			background: url(../images/search.gif) no-repeat -160px -2px
+			width: 23px
+			left: calc(100% + 7px)
+		&+noindex
+			>.social-block-groups
+				width: 100%
+
 	.paginator span em, .paginator span a
 		padding: 0
 	/**/
@@ -294,6 +474,15 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
+	#filter-custom-mobile
+		display: none !important
+	a[href="#filter-custom-mobile"]
+		display: none !important
+	.filters
+		.nav
+			li:not(.pull-right)
+				a:last-child
+					display: none
 	#pagination-index-mobile
 		display: none
 	/**/

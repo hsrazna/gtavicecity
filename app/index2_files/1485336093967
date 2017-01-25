@@ -1,0 +1,2 @@
+AVP.uuid = 'f0d0c325fee8f9bfdbe298101504e8d6';
+AVP.load(AVP.uuid);

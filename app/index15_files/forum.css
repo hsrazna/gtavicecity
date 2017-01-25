@@ -1,0 +1,62 @@
+div.banner-content-top, section.forum, section.thread, section.thread-add, section.thread-edit, section.post, section.comments { margin-left: 0; }
+
+section.forum div.alert { margin: 10px; }
+section.forum div.section-header-bordered .btn-large { float: right; margin: 8px 10px 0 0; }
+section.forum div.section-header-bordered .btn-large.auth-link { float: right; margin: 8px 10px 0 0; font-size: 17.5px; color: #333; }
+
+.forum-category-parent { background: #fff; border-bottom: 2px #c4bfba solid; margin-bottom: 10px; padding: 0 0 10px 0; }
+.forum-category-parent .header { background: url(../images/h3_bg.gif) repeat-x bottom #fff; margin: 0; padding: 5px 0 5px 10px; border: none !important; }
+.forum-category-parent .header h2 { font-size: 24px; margin-bottom: 0; }
+.forum-category-parent .header p { margin: 2px 0 0 0; }
+.forum-category-parent .description { background: #ccc; color: #fff; margin-bottom: 10px; }
+.forum-category-parent .description div.columns { min-height: 20px; }
+.forum-category-parent hr { margin: 10px; }
+
+.forum-category, .forum-category-parent .description { padding-left: 60px; }
+.forum-category h3 { left: 10px; margin: 0; }
+.forum-category p { margin: 5px 0; }
+.forum-category .span6 p { margin: 5px 10px; }
+
+.forum-threads { background: #fff; border-bottom: 2px #c4bfba solid; margin-bottom: 10px; }
+.forum-threads table { margin: 0; }
+.forum-threads table td.counters { vertical-align: middle; text-align: center; }
+
+.thread .content-like { margin-right: 10px; }
+.thread .breadcrumbs, .thread .views { min-height: inherit; }
+a.thread-edit, a.thread-remove, a.thread-report { margin: 0 0 0 5px; }
+
+.post .user-name { min-height: inherit; padding-left: 5px; font-weight: bold; }
+.post .info { min-height: inherit; padding-left: 5px; font-size: .8em; }
+.post .role { text-align: center; font-weight: bold; color: #999; margin-bottom: 5px; }
+.post .badge { margin-bottom: 5px; }
+.post .badges { text-align: center; margin: 5px 0 0 10px; }
+.post .well { margin: 0; min-height: 140px; }
+.post .controls { margin: 5px 5px 0 0; text-align: right; }
+
+.forum-category { background: url('../images/placeholders/forum.png') 10px 0 no-repeat; }
+.gta-3 { background: url('../images/games/forum/gta-3.png') 10px 0 no-repeat; }
+.gta-4 { background: url('../images/games/forum/gta-4.png') 10px 0 no-repeat; }
+.gta-san-andreas { background: url('../images/games/forum/gta-san-andreas.png') 10px 0 no-repeat; }
+.gta-san-andreas-android { background: url('../images/games/forum/gta-san-andreas-android.png') 10px 0 no-repeat; }
+.gta-vice-city { background: url('../images/games/forum/gta-vice-city.png') 10px 0 no-repeat; }
+
+a.unread { font-weight: bolder; }
+
+.forum-category-parent .header h2, .forum-category h3 { overflow: hidden; white-space: nowrap; position: relative; display: block; text-align: left; }
+.forum-category-parent .header h2:after, .forum-category h3:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0; right: 0;
+
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-8 */
+}
